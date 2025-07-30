@@ -3,4 +3,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragement2">Fragement2</string>
     <string name="fragement1">Fragement 1</string>
+    <string name="select_a_date_from_calendar_above">Select a date from calendar above</string>
 </resources>

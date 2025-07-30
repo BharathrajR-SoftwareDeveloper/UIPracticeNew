@@ -14,6 +14,7 @@ import com.example.uipractice.Pagination.api.RetrofitInstance
 import com.example.uipractice.databinding.ActivityMainBinding
 import com.example.uipractice.Pagination.api.paging.ProductPagingSource
 import com.example.uipractice.RYGEnum.Enum_Activity
+import com.example.uipractice.calendar.CalendarActivity
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -36,13 +37,13 @@ class MainActivity : AppCompatActivity() {
 //                adapter.submitData(it)
 //            }
 //        }
-//        startActivity(Intent(this, Enum_Activity::class.java))
-        binding.fragementbtn1.setOnClickListener {
-            replaceFragement(Fragement1())
-        }
-        binding.fragementbtn2.setOnClickListener {
-            replaceFragement(Fragement2())
-        }
+        startActivity(Intent(this, CalendarActivity::class.java))
+//        binding.fragementbtn1.setOnClickListener {
+//            replaceFragement(Fragement1())
+//        }
+//        binding.fragementbtn2.setOnClickListener {
+//            replaceFragement(Fragement2())
+//        }
     }
 
     private fun replaceFragement(fragment: Fragment) {
